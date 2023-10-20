@@ -6,12 +6,10 @@ const CardDeal = () => (
   <section className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        Find a better card deal <br className="sm:block hidden" /> in few easy
-        steps.
+      Discover the Perfect Chat Partner <br className="sm:block hidden" /> in Just a Few Simple Clicks.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
-        aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+      Finding the right video chat app should be a breeze. Our platform is designed to match you with the ideal video chatting experience. No more sifting through endless options - we've got you covered.
       </p>
 
       <Button styles={`mt-10`} />

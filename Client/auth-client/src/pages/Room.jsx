@@ -8,10 +8,12 @@ const RoomPage = () => {
   const [remoteSocketId, setRemoteSocketId] = useState(null);
   const [myStream, setMyStream] = useState();
   const [remoteStream, setRemoteStream] = useState();
+  const [usersInRoom, setUsersInRoom] = useState([]);
 
   const handleUserJoined = useCallback(({ email, id }) => {
     console.log(`Email ${email} joined room`);
     setRemoteSocketId(id);
+    setUsersInRoom(prevUsers => [...prevUsers, email]);
   }, []);
 
   const handleCallUser = useCallback(async () => {
@@ -85,7 +87,7 @@ const RoomPage = () => {
       setRemoteStream(remoteStream[0]);
     });
   }, []);
-  const handleCallEnd = () => {
+  const handleCallEnd = useCallback(() => {
     // Stop the local video stream
     myStream.getTracks().forEach((track) => track.stop());
 
@@ -95,7 +97,8 @@ const RoomPage = () => {
     // Reset states
     setRemoteSocketId(null);
     setMyStream(null);
-  };
+    setUsersInRoom(prevUsers => prevUsers.filter(user => user !== usersInRoom[0]));
+  }, [myStream, usersInRoom] );
 
   useEffect(() => {
     socket.on("user:joined", handleUserJoined);
@@ -123,26 +126,34 @@ const RoomPage = () => {
   ]);
 
   return (
-    <div>
-    <h1>Room Page</h1>
+    <div className="container mx-auto p-4">
+    <h1 className="text-2xl font-bold mb-4">Room Page</h1>
     <h4>{remoteSocketId ? "Connected" : "No one in room"}</h4>
-    {myStream && <button onClick={sendStreams}>Send Stream</button>}
-    {remoteSocketId && <button onClick={handleCallUser}>CALL</button>}
     {myStream && (
-      <>
-        <h1>My Stream</h1>
-        <ReactPlayer
-          playing
-          muted
-          height="100px"
-          width="200px"
-          url={myStream}
-        />
-      </>
+      <button
+        onClick={sendStreams}
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-2 rounded"
+      >
+        Send Stream
+      </button>
+    )}
+    {remoteSocketId && (
+      <button
+        onClick={handleCallUser}
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-2 rounded"
+      >
+        CALL
+      </button>
+    )}
+    {myStream && (
+      <div className="mt-4">
+        <h1 className="text-xl font-bold mb-2">My Stream</h1>
+        <ReactPlayer playing muted height="100px" width="200px" url={myStream} />
+      </div>
     )}
     {remoteStream && (
-      <>
-        <h1>Remote Stream</h1>
+      <div className="mt-4">
+        <h1 className="text-xl font-bold mb-2">Remote Stream</h1>
         <ReactPlayer
           playing
           muted
@@ -150,14 +161,25 @@ const RoomPage = () => {
           width="200px"
           url={remoteStream}
         />
-      </>
+      </div>
     )}
 
-    {/* Call End Button */}
     {remoteSocketId && (
-      <button onClick={handleCallEnd}>End Call</button>
+      <button
+        onClick={handleCallEnd}
+        className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 mt-2 rounded"
+      >
+        End Call
+      </button>
     )}
-    </div>
+
+
+
+ 
+
+  </div>
+      
+
   );
 };
 

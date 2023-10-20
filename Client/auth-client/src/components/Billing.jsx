@@ -15,13 +15,10 @@ const Billing = () => (
 
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        Easily control your <br className="sm:block hidden" /> billing &
-        invoicing
+      Effortlessly manage your  <br className="sm:block hidden" /> subscription and payments.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio
-        aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea
-        placerat.
+      Seamless and secure, our video chat app ensures that handling your billing and invoices is as smooth as your conversations. With user-friendly controls and transparent pricing, you're always in the know.
       </p>
 
       <div className="flex flex-row flex-wrap sm:mt-10 mt-6">

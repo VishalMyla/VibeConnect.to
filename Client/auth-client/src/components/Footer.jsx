@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <div className='max-w-[100%] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300'>
       <div>
-        <h1 className='w-full text-3xl font-bold text-[#47CCD9]'>REACT.</h1>
-        <p className='py-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit ullam iste repellat consequatur libero reiciendis, blanditiis accusantium.</p>
+        <h1 className='w-full text-3xl font-bold text-[#47CCD9]'>VisioLink.</h1>
+        <p className='py-4'>VisioLink is revolutionizing the way we connect with others. Our cutting-edge video chat app provides seamless, high-quality communication for individuals and businesses alike. With end-to-end encryption and a user-friendly interface.</p>
         <div className='flex justify-between md:w-[75%] my-6'>
             <FaFacebookSquare size={30} />
             <FaInstagram size={30} />

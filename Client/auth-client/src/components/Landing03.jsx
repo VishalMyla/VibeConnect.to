@@ -6,9 +6,9 @@ const Newsletter = () => {
       <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3'>
         <div className='lg:col-span-2 my-4'>
           <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'>
-            Want tips & tricks to optimize your flow?
+          Is my data secure?
           </h1>
-          <p>Sign up to our newsletter and stay up to date.</p>
+          <p>Yes, we take your privacy seriously. All your conversations are encrypted end-to-end.</p>
         </div>
         <div className='my-4'>
           <div className='flex flex-col sm:flex-row items-center justify-between w-full'>

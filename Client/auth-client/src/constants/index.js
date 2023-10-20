@@ -23,23 +23,23 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "Crystal-Clear Quality",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "The best video chat apps offer impeccable video and audio quality, ensuring every conversation feels like you're in the same room.",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Fortified Privacy",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "We go above and beyond to safeguard your conversations and personal information, employing state-of-the-art encryption measures.",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Easy Transitionr",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "Switching to our video chat app is effortless, ensuring you can enjoy uninterrupted conversations without missing a beat.",
   },
 ];
 
@@ -47,7 +47,7 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+    "Connection is the key to everything. This app makes it seamless and convenient. It's like being in the same room, no matter the distance.",
     name: "Herman Jensen",
     title: "Founder & Leader",
     img: people01,
@@ -55,7 +55,7 @@ export const feedback = [
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
+    "Video chat has never been so smooth and reliable. It's like magic. This app is a game-changer!",
     name: "Steve Mark",
     title: "Founder & Leader",
     img: people02,
@@ -63,7 +63,7 @@ export const feedback = [
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
+    "Communication is at the heart of every success. This app truly understands the value of a clear and secure connection.",
     name: "Kenn Gallagher",
     title: "Founder & Leader",
     img: people03,
