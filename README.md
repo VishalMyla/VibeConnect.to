@@ -17,6 +17,7 @@ VibeConnect is a real-time video chatting application designed to provide seamle
 ## Introduction
 
 VibeConnect, created by Vishal Myla, is a state-of-the-art video chatting application that facilitates face-to-face conversations over the internet. Whether for remote work, online education, healthcare services, or social networking, VibeConnect leverages WebRTC technology to provide a reliable and high-fidelity communication experience.
+Real-time communication tools have become essential to interpersonal and professional relationships in today's fast-paced digital environment. The Video Chat Application, which provides a comprehensive and user-friendly platform for audio and video discussions, represents a significant leap in this field. This programme offers direct peer-to-peer communications without the need for a centralized server by utilizing WebRTC technology. This strategy guarantees low-latency, high-quality communication while simultaneously enhancing privacy.
 
 ## Features
 
