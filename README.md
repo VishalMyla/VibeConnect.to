@@ -1,6 +1,9 @@
 # VibeConnect - Video Chat Application
 
 VibeConnect is a real-time video chatting application designed to provide seamless and secure peer-to-peer communication using WebRTC technology. This README file provides an overview of the project, its architecture, implementation details, and future scope.
+## Demo
+
+[![Demo Video](https://img.youtube.com/vi/DXMa8hJc9Yw/0.jpg)](https://youtu.be/DXMa8hJc9Yw)
 
 ## Table of Contents
 - [Introduction](#introduction)
