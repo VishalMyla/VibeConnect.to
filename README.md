@@ -31,11 +31,11 @@ Real-time communication tools have become essential to interpersonal and profess
 
 The application's architecture is built on WebRTC technology, featuring a robust signaling server using Node.js and Socket.IO. Enhanced ICE traversal algorithms, dynamic bandwidth allocation, and intelligent codec selection contribute to a smooth and efficient communication experience.
 
-For a detailed explanation of the architecture, please refer to the [Architecture](#architecture) section in the [project documentation](link-to-documentation).
+For a detailed explanation of the architecture, please refer to the Architecture section in the [project documentation](https://vishalmyla.github.io/VibeConnectDocs/).
 
 ## Implementation
 
-The implementation details are outlined in the [Implementation](#implementation) section of the [project documentation](link-to-documentation). Key files include:
+The implementation details are outlined in the Implementation section of the [project documentation](https://vishalmyla.github.io/VibeConnectDocs/). Key files include:
 
 - `Lobby.js`: Manages user authentication and room creation.
 - `Room.js`: Acts as a container for users in a specific room, handling video calls and file transfers.
@@ -50,7 +50,7 @@ To use VibeConnect, follow these steps:
 2. Install dependencies: `npm install`
 3. Run the application: `npm start`
 
-For more detailed instructions, please refer to the [project documentation](link-to-documentation).
+For more detailed instructions, please refer to the [project documentation](https://vishalmyla.github.io/VibeConnectDocs/).
 
 ## Contributing
 
